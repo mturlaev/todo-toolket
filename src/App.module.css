@@ -1,0 +1,48 @@
+.header {
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+input {
+    width: 30%;
+    padding: 5px 10px;
+    background-color: rgb(121, 195, 195);
+    border: none;
+    border-radius: 5px;
+}
+.btn {
+    width: 15%;
+    padding: 5px 0;
+    background-color: rgb(113, 67, 220);
+    border: 1px solid rgb(113, 67, 220);
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+.addList{
+    width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.items {
+    background-color: aqua;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: blueviolet;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: oblique;
+  }
+  .btn_item {
+    margin-left: 50px;
+    border: none;
+    padding: 5px 15px;
+    background-color: aqua;
+    cursor: pointer;
+    color: brown;
+    font-size: 20px;
+    font-weight: 600;
+  }

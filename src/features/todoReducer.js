@@ -6,18 +6,22 @@ const initalState = {
     todos: [
         {
             text: "поспать",
+            completed: false
         },
         {
-            text: "пойти домой"
+            text: "пойти домой",
+            completed: true
         },
         {
-            text: "пропустить задание"
+            text: "пропустить задание",
+            completed:false
         }
     ]
 };
 
 export const add = createAction("add")
 export const deleted = createAction("delete")
+export const complete = createAction("completed")
 
 const todoReducer = createReducer(initalState, (builder) => {
     builder
@@ -31,6 +35,10 @@ const todoReducer = createReducer(initalState, (builder) => {
             if (index !== action.payload) return true
         })
     } )
+    .addCase(complete, (state, action) => {
+        state.todos[action.payload].completed = !state.todos[action.payload].completed
+        console.log(state.todos[action.payload].completed)
+    })
 })
 
 export default todoReducer

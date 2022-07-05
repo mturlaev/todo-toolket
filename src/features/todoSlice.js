@@ -11,6 +11,7 @@ export const fetchTodos = createAsyncThunk( "todos/fetch", async (_, thunkAPI) =
         thunkAPI.rejectWithValue(error.message)
     }
 });
+//
 
 export const postTodos = createAsyncThunk("todos/post", async (text, thunkAPI) => {
     try {
